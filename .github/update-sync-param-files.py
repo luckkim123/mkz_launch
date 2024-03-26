@@ -34,7 +34,7 @@ def create_tier4_launch_sync_configs(tier4_launch_package_path: Path) -> List[Fi
         relative_param_file_path = param_file_path.relative_to(launch_config_path)
 
         source = param_file_path.relative_to(CLONE_PATH)
-        dest = Path("autoware_launch/config") / launch_package_name / relative_param_file_path
+        dest = Path("mkz_launch/config") / launch_package_name / relative_param_file_path
 
         sync_configs.append(FileSyncConfig(str(source), str(dest)))
 
