@@ -67,7 +67,7 @@
       <arg name="lanelet2_map_file" value="$(var lanelet2_map_file)"/>
       <arg name="pointcloud_map_file" value="$(var pointcloud_map_file)"/>
       <!-- Sensing -->
-      <arg name="launch_sensing_driver" value="false"/>
+      <arg name="launch_sensing_driver" value="true"/>
     </include>
   </group>
 </launch>
